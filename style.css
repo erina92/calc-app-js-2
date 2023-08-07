@@ -1,26 +1,102 @@
 .container {
-  max-width: 300px;
+  width: 360px;
+  height: 683px;
+  background: #faddb7;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
 }
 
-.calculator {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 10px;
+input[type="text"] {
+  color: #f19927;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 118px;
+  height: 89px;
+  position: relative;
+  top: 120px;
+  left: 214px;
+  background: transparent;
+  border: none;
 }
 
-.calculator input {
-  grid-column: 1 / span 4;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  text-align: right;
+.container .union {
+  width: 360px;
+  height: 90px;
+  flex-shrink: 0;
+  background-color: #f5b461;
+  filter: drop-shadow(0px -20px 40px rgba(245, 180, 97, 0.15));
+  position: relative;
+  top: 233px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
 }
 
-.calculator button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
+.container .union .cancel,
+.multiply,
+.divide,
+.percentage {
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 35px;
+}
+
+.container .union .seven,
+.eight,
+.nine,
+.minus {
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 35px;
+}
+
+.container .union .four,
+.five,
+.six,
+.plus {
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 35px;
+}
+
+.container .union .one,
+.two,
+.three,
+.equals {
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 35px;
+}
+
+.container .union .zero,
+.point {
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 35px;
 }

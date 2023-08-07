@@ -4,32 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&display=swap"
+      rel="stylesheet"
+    />
     <title>Calculator</title>
   </head>
   <body>
     <div class="container">
-      <h2>Calculator</h2>
-      <div class="calculator">
+      <!-- Calculator -->
+      <section id="calculator">
         <input type="text" id="input" readonly />
-        <button onclick="clearInput()">C</button>
-        <button onclick="deleteLastChar()">DEL</button>
-        <button onclick="appendToInput('/')">/</button>
-        <button onclick="appendToInput('7')">7</button>
-        <button onclick="appendToInput('8')">8</button>
-        <button onclick="appendToInput('9')">9</button>
-        <button onclick="appendToInput('*')">*</button>
-        <button onclick="appendToInput('4')">4</button>
-        <button onclick="appendToInput('5')">5</button>
-        <button onclick="appendToInput('6')">6</button>
-        <button onclick="appendToInput('-')">-</button>
-        <button onclick="appendToInput('1')">1</button>
-        <button onclick="appendToInput('2')">2</button>
-        <button onclick="appendToInput('3')">3</button>
-        <button onclick="appendToInput('+')">+</button>
-        <button onclick="appendToInput('0')">0</button>
-        <button onclick="appendToInput('.')">.</button>
-        <button onclick="calculate()">=</button>
-      </div>
+        <div class="union">
+          <div class="rectangle-1">
+            <button class="cancel" onclick="clearInput()">C</button>
+          </div>
+          <div class="rectangle-2">
+            <button class="percentage" onclick="appendToInput('%')">%</button>
+          </div>
+          <div class="rectangle-3">
+            <button class="multiply" onclick="appendToInput('*')">x</button>
+          </div>
+          <div class="rectangle-4">
+            <button class="divide" onclick="appendToInput('/')">/</button>
+          </div>
+        </div>
+        <div class="union">
+          <div class="rectangle-1">
+            <button class="seven" onclick="appendToInput('7')">7</button>
+          </div>
+          <div class="rectangle-2">
+            <button class="eight" onclick="appendToInput('8')">8</button>
+          </div>
+          <div class="rectangle-3">
+            <button class="nine" onclick="appendToInput('9')">9</button>
+          </div>
+          <div class="rectangle-4">
+            <button class="minus" onclick="appendToInput('-')">-</button>
+          </div>
+        </div>
+        <div class="union">
+          <div class="rectangle-1">
+            <button class="four" onclick="appendToInput('4')">4</button>
+          </div>
+          <div class="rectangle-2">
+            <button class="five" onclick="appendToInput('5')">5</button>
+          </div>
+          <div class="rectangle-3">
+            <button class="six" onclick="appendToInput('6')">6</button>
+          </div>
+          <div class="rectangle-4">
+            <button class="plus" onclick="appendToInput('+')">+</button>
+          </div>
+        </div>
+        <div class="union">
+          <div class="rectangle-1">
+            <button class="one" onclick="appendToInput('1')">1</button>
+          </div>
+          <div class="rectangle-2">
+            <button class="two" onclick="appendToInput('2')">2</button>
+          </div>
+          <div class="rectangle-3">
+            <button class="three" onclick="appendToInput('3')">3</button>
+          </div>
+          <div class="rectangle-4">
+            <button class="equals" onclick="calculate()">=</button>
+          </div>
+        </div>
+        <div class="union">
+          <div class="rectangle-1">
+            <button class="zero" onclick="appendToInput('0')">0</button>
+          </div>
+          <div class="rectangle-2">
+            <button class="point" onclick="appendToInput('.')">.</button>
+          </div>
+        </div>
+      </section>
     </div>
     <script src="app.js"></script>
   </body>
